@@ -12,7 +12,7 @@ def generate_launch_description():
     config_filepath = launch.substitutions.LaunchConfiguration('config_filepath')
 
     return launch.LaunchDescription([
-        launch.actions.DeclareLaunchArgument('joy_config', default_value='ps3'),
+        launch.actions.DeclareLaunchArgument('joy_config', default_value='f710'),
         launch.actions.DeclareLaunchArgument('joy_dev', default_value='/dev/input/js0'),
         launch.actions.DeclareLaunchArgument('config_filepath', default_value=[
             launch.substitutions.TextSubstitution(text=os.path.join(

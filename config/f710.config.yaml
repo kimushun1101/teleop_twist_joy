@@ -1,0 +1,17 @@
+teleop_twist_joy_node:
+  ros__parameters:
+    axis_linear:
+      x: 1 # Up/Down Axis stick left
+    scale_linear:
+      x: 0.7
+    scale_linear_turbo:
+      x: 1.5
+
+    axis_angular:
+      yaw: 0 # Left/Right Axis stick left
+      # yaw: 2 # Left/Right Axis stick right
+    scale_angular:
+      yaw: 0.4
+
+    enable_button: 4 # LB shoulder button
+    enable_turbo_button: 5  # RB shoulder button
